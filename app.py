@@ -3,6 +3,7 @@ import pyodbc
 from datetime import datetime, timedelta
 import websocket
 import json
+import time
 
 app = Flask(__name__)
 
@@ -87,7 +88,7 @@ def save_transaction():
         mc_id = data.get('mc_id')
         duration_minutes = data.get('duration') # Duration in minutes passed from API
         # start_time = datetime.now() + timedelta(seconds=5)  # Start time is the current time
-        start_time = datetime.now() + timedelta(hours=8)
+        start_time = datetime.now()
         stop_time = start_time + timedelta(minutes=duration_minutes) # Calculate stop time
         amount = data.get('amount')
         print(mc_id, duration_minutes, start_time, stop_time)
@@ -107,7 +108,7 @@ def save_transaction():
 @app.route('/api/update_transaction/<ID>', methods=['POST'])
 def update_transaction(ID):
     try:
-        stop_time = datetime.now() + timedelta(hours=8)
+        stop_time = datetime.now()
         # Insert data into the database
         with get_db_connection() as conn:
             cursor = conn.cursor()
