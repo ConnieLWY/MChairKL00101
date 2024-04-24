@@ -180,6 +180,8 @@ $(document).ready(function () {
                         console.log(message2);
                         sendMessageAndCloseSocket(message2);
 
+                        startCountdown(StopTime);
+
                     },
                     error: function (xhr, status, error) {
                         console.error('Error:', error); // Log error message
@@ -198,6 +200,8 @@ $(document).ready(function () {
         sendMessageAndCloseSocket(stop1);
         console.log(stop2);
         sendMessageAndCloseSocket(stop2);
+        updateTrans();
+        setTimeout(fetchTrans, 3000);
     });
 
     $("#endSession").click(function () {
