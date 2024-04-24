@@ -165,29 +165,16 @@ $(document).ready(function () {
                         const message1 = "59 59 06 02 01 BB".replace(/ /g, "_");
                         const message2 = "59 59 06 02 01 BB".replace(/ /g, "_");
                         var command1 = {
-                            command: message1
+                            command: [message1, message2]
                         };
-                        var command2 = {
-                            command: message2
-                        };
+
                         $.ajax({
                             url: '/api/send_command',
                             type: 'POST',
                             contentType: 'application/json',
                             data: JSON.stringify(command1),
                             success: function (response) {
-                                $.ajax({
-                                    url: '/api/send_command',
-                                    type: 'POST',
-                                    contentType: 'application/json',
-                                    data: JSON.stringify(command2),
-                                    success: function (response) {
-                                        startCountdown(StopTime);
-                                    },
-                                    error: function (xhr, status, error) {
-                                        alert(error);
-                                    }
-                                })
+                                startCountdown(StopTime);
                             },
                             error: function (xhr, status, error) {
                                 alert(error);
@@ -208,10 +195,7 @@ $(document).ready(function () {
         const stop1 = "59 59 06 03 01 BC".replace(/ /g, "_");
         const stop2 = "59 59 06 02 02 BC".replace(/ /g, "_");
         var command1 = {
-            command: stop1
-        };
-        var command2 = {
-            command: stop2
+            command: [stop1, stop2]
         };
         $.ajax({
             url: '/api/send_command',
@@ -219,19 +203,8 @@ $(document).ready(function () {
             contentType: 'application/json',
             data: JSON.stringify(command1),
             success: function (response) {
-                $.ajax({
-                    url: '/api/send_command',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(command2),
-                    success: function (response) {
-                        updateTrans();
-                        setTimeout(fetchTrans, 3000);
-                    },
-                    error: function (xhr, status, error) {
-                        alert('command2: ' + error);
-                    }
-                });
+                updateTrans();
+                setTimeout(fetchTrans, 3000);
             },
             error: function (xhr, status, error) {
                 alert('command1: ' + error);

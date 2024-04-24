@@ -39,11 +39,12 @@ def send_command_with_retry(command, websocket_url, max_retries=3):
             ws = websocket.WebSocket()
             ws.connect(websocket_url)
 
-            message = {"action": "sendMessage", "message": command}
-            json_message = json.dumps(message)
+            for c in command:
+                message = {"action": "sendMessage", "message": c.replace("_", " ")}
+                json_message = json.dumps(message)
 
-            # Send command
-            ws.send(json_message)
+                # Send command
+                ws.send(json_message)
 
             # Receive response if needed
             response = 'succeed'
@@ -64,7 +65,7 @@ def send_command_with_retry(command, websocket_url, max_retries=3):
 @app.route('/api/send_command', methods=['POST'])
 def send_command():
     # Get the command from the request
-    command = request.json.get('command').replace("_", " ")
+    command = request.json.get('command')
 
     # WebSocket URL
     websocket_url = "wss://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com/demo"
