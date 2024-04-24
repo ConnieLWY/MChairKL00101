@@ -63,7 +63,7 @@ def update_transaction(ID):
         # Insert data into the database
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute("UPDATE [Transaction] SET StopTime = ? WHERE MC_ID = ? AND StartTime = (SELECT TOP 1 StartTime FROM [Transaction] WHERE MC_ID = ? ORDER BY StartTime DESC)",
+            cursor.execute("UPDATE [Transaction] SET StopTime = ? WHERE MC_ID = ? AND StartTime = (SELECT TOP 1 StartTime FROM [Transaction] WHERE MC_ID = ? ORDER BY TransactionID DESC)",
                            (stop_time, ID, ID))
             conn.commit()
 
@@ -149,7 +149,7 @@ def get_inv_by_id(ID):
         cursor = conn.cursor()
 
         # Execute SQL query to fetch data for the specified ID
-        cursor.execute("SELECT TOP 1 t.*, l.Name, 'MC' + CONVERT(VARCHAR(4), YEAR(t.StartTime)) + RIGHT('0000000' + CONVERT(VARCHAR(7), t.TransactionID), 7) AS CustomTransactionID FROM [Transaction] t JOIN MCLocation l ON t.MC_ID = l.ID WHERE MC_ID = ? ORDER BY t.StartTime DESC;", (ID,))
+        cursor.execute("SELECT TOP 1 t.*, l.Name, 'MC' + CONVERT(VARCHAR(4), YEAR(t.StartTime)) + RIGHT('0000000' + CONVERT(VARCHAR(7), t.TransactionID), 7) AS CustomTransactionID FROM [Transaction] t JOIN MCLocation l ON t.MC_ID = l.ID WHERE MC_ID = ? ORDER BY t.TransactionID DESC;", (ID,))
         row = cursor.fetchone()
         print(row)
         # If row is found, format data as a dictionary
