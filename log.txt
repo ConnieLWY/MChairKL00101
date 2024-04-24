@@ -1,0 +1,1059 @@
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: 9QCtIhfkyuXP7f8Ew7zv0w==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:45:58 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: Q5Zjl5JjiIgLZYAYVxGoHeHLq/4=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:45:54: 2024-04-24 15:45:53 2024-04-24 15:30:38
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:< CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+INFO:root:2024-04-24 07:45:54: Connection closed. Reconnecting...
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: IKZb9JL20uvmNvU0ZA6Zzw==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:47:00 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: M2STkRxTFHJ8mLtgCImxvUnIsiQ=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:46:56: 2024-04-24 15:46:55 2024-04-24 15:30:38
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:46:56: test
+INFO:root:2024-04-24 07:46:56: Connection closed. Reconnecting...
+DEBUG:websockets.client:< CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: Nfc7jU22G+e5sdG6m1ma8Q==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:48:19 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: E1INIZLuyZOslRfRX6ClSCjzg54=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:15: 2024-04-24 15:48:15 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:15: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:48:15: test
+INFO:root:2024-04-24 07:48:15: Connection closed. Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:18: 2024-04-24 15:48:18 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:18: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:21: 2024-04-24 15:48:21 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:21: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:24: 2024-04-24 15:48:24 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:24: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:27: 2024-04-24 15:48:27 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:27: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:30: 2024-04-24 15:48:30 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:30: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: KxAJsgtnYXxD88uF+kQfvw==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:48:39 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: PLTUrF3+zCybZux2Rch4OD9RSrA=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:35: 2024-04-24 15:48:35 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:35: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:48:35: test
+INFO:root:2024-04-24 07:48:35: Connection closed. Reconnecting...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: 7K8zVPUw/Ie6rpDbjWWCkA==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:48:55 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: 7Gb0zz5Seq4yNaVr7EMmqDy3nVY=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:51: 2024-04-24 15:48:51 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:51: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:48:51: test
+INFO:root:2024-04-24 07:48:51: Connection closed. Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:54: 2024-04-24 15:48:54 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:54: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:48:57: 2024-04-24 15:48:57 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:48:57: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:00: 2024-04-24 15:49:00 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:00: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:03: 2024-04-24 15:49:03 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:03: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:06: 2024-04-24 15:49:06 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:06: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:09: 2024-04-24 15:49:09 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:09: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING 6e 59 d0 19 [binary, 4 bytes]
+DEBUG:websockets.client:< PONG 6e 59 d0 19 [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:12: 2024-04-24 15:49:12 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:12: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:16: 2024-04-24 15:49:15 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:16: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:19: 2024-04-24 15:49:19 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:19: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:22: 2024-04-24 15:49:22 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:22: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:25: 2024-04-24 15:49:25 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:25: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: bh4BVkX19pTj1pmfn48rbg==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:49:38 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: c2obKVZfCqR/8aEfhJiWLt+oMYg=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:34: 2024-04-24 15:49:34 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:34: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:37: 2024-04-24 15:49:37 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:37: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: BnLoFX5egPhjV7k41EvHFQ==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:49:49 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: 4gZZEVpl10qKG0EaCS2l4LEcrmI=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:44: 2024-04-24 15:49:44 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:44: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:49:45: test
+INFO:root:2024-04-24 07:49:45: Connection closed. Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:48: 2024-04-24 15:49:47 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:48: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:51: 2024-04-24 15:49:51 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:51: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:54: 2024-04-24 15:49:54 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:54: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:49:57: 2024-04-24 15:49:57 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:49:57: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:00: 2024-04-24 15:50:00 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:00: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:03: 2024-04-24 15:50:03 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:03: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING 35 1a fd 12 [binary, 4 bytes]
+DEBUG:websockets.client:< PONG 35 1a fd 12 [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:06: 2024-04-24 15:50:06 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:06: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:09: 2024-04-24 15:50:09 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:09: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:12: 2024-04-24 15:50:12 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:12: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:15: 2024-04-24 15:50:15 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:15: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: vEH5iSIqVWznCtTv8aqTgA==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:50:24 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: unHtZlbSztP2XZWJ/KNOIoyhUvg=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:20: 2024-04-24 15:50:20 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:20: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:50:20: test
+INFO:root:2024-04-24 07:50:20: Connection closed. Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:23: 2024-04-24 15:50:23 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:23: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:26: 2024-04-24 15:50:26 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:26: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:29: 2024-04-24 15:50:29 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:29: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:32: 2024-04-24 15:50:32 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:32: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:35: 2024-04-24 15:50:35 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:35: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:38: 2024-04-24 15:50:38 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:38: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING d7 6b 55 08 [binary, 4 bytes]
+DEBUG:websockets.client:< PONG d7 6b 55 08 [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:41: 2024-04-24 15:50:41 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:41: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:44: 2024-04-24 15:50:44 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:44: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:48: 2024-04-24 15:50:47 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:48: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:51: 2024-04-24 15:50:51 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:51: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:54: 2024-04-24 15:50:54 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:54: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:50:57: 2024-04-24 15:50:57 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:50:57: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING 2a 2e af c6 [binary, 4 bytes]
+DEBUG:websockets.client:< PONG 2a 2e af c6 [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:00: 2024-04-24 15:51:00 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:00: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:03: 2024-04-24 15:51:03 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:03: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:06: 2024-04-24 15:51:06 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:06: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:09: 2024-04-24 15:51:09 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:09: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:12: 2024-04-24 15:51:12 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:12: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: bpHLsHcEpIVnNxnZ6cWueg==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:51:20 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: 2vIF0eP0eLVuDuQYweqQsKPYv/Y=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:16: 2024-04-24 15:51:16 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:16: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:51:16: test
+INFO:root:2024-04-24 07:51:16: Connection closed. Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:19: 2024-04-24 15:51:19 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:19: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: ruE53W8UrI4RSrkoclRyLA==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:52:01 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: kzSeMXhLKpV5wGHST3NlE4v1WsY=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:51:56: 2024-04-24 15:51:56 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:51:56: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:51:57: test
+INFO:root:2024-04-24 07:51:57: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:00: 2024-04-24 15:51:59 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:00: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:03: 2024-04-24 15:52:03 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:03: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:06: 2024-04-24 15:52:06 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:06: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:09: 2024-04-24 15:52:09 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:09: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:12: 2024-04-24 15:52:12 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:12: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:15: 2024-04-24 15:52:15 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:15: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING f3 c5 4a 1a [binary, 4 bytes]
+DEBUG:websockets.client:< PONG f3 c5 4a 1a [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:18: 2024-04-24 15:52:18 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:18: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:21: 2024-04-24 15:52:21 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:21: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:24: 2024-04-24 15:52:24 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:24: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:27: 2024-04-24 15:52:27 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:27: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:30: 2024-04-24 15:52:30 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:30: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:34: 2024-04-24 15:52:34 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:34: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING 77 7f b6 8f [binary, 4 bytes]
+DEBUG:websockets.client:< PONG 77 7f b6 8f [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:37: 2024-04-24 15:52:37 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:37: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: +fcCLvkWCnegMWmUjJNJhw==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:52:48 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: e0TPlyFMU6ELk2cbSiaasJ0TXDc=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:44: 2024-04-24 15:52:44 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:44: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:52:44: test
+INFO:root:2024-04-24 07:52:44: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:47: 2024-04-24 15:52:47 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:47: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:50: 2024-04-24 15:52:50 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:50: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:53: 2024-04-24 15:52:53 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:53: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:52:56: 2024-04-24 15:52:56 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:52:56: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: hHaOKlaiJoDU+I4nZGnKjQ==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:54:00 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: 9+A08aOmZLzl0MLvjAH5B8JJFBE=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:53:56: 2024-04-24 15:53:55 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:53:56: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:53:56: test
+INFO:root:2024-04-24 07:53:56: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:53:59: 2024-04-24 15:53:59 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:53:59: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:02: 2024-04-24 15:54:02 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:02: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:05: 2024-04-24 15:54:05 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:05: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:08: 2024-04-24 15:54:08 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:08: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:11: 2024-04-24 15:54:11 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:11: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:15: 2024-04-24 15:54:14 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:15: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING c0 5d 49 1b [binary, 4 bytes]
+DEBUG:websockets.client:< PONG c0 5d 49 1b [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:18: 2024-04-24 15:54:18 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:18: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:21: 2024-04-24 15:54:21 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:21: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:24: 2024-04-24 15:54:24 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:24: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:27: 2024-04-24 15:54:27 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:27: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:30: 2024-04-24 15:54:30 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:30: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:33: 2024-04-24 15:54:33 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:33: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING 2f 47 f1 d3 [binary, 4 bytes]
+DEBUG:websockets.client:< PONG 2f 47 f1 d3 [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:36: 2024-04-24 15:54:36 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:36: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:39: 2024-04-24 15:54:39 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:39: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:42: 2024-04-24 15:54:42 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:42: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:46: 2024-04-24 15:54:45 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:46: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:49: 2024-04-24 15:54:49 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:49: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:52: 2024-04-24 15:54:52 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:52: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:54:55: 2024-04-24 15:54:55 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:54:55: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING 0f 0d 50 cd [binary, 4 bytes]
+DEBUG:websockets.client:< PONG 0f 0d 50 cd [binary, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: mu3p34/LDN+nQQPRs0T11w==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:55:04 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: /WoTKyu4Uhh9i4oVZ7KciDhL2ZY=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:00: 2024-04-24 15:55:00 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:00: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:00: test
+INFO:root:2024-04-24 07:55:00: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:03: 2024-04-24 15:55:03 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:03: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:03: test
+INFO:root:2024-04-24 07:55:03: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:06: 2024-04-24 15:55:06 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:06: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:06: test
+INFO:root:2024-04-24 07:55:06: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:09: 2024-04-24 15:55:09 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:09: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:09: test
+INFO:root:2024-04-24 07:55:09: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:12: 2024-04-24 15:55:12 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:12: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:12: test
+INFO:root:2024-04-24 07:55:12: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:15: test
+INFO:root:2024-04-24 07:55:15: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:15: 2024-04-24 15:55:15 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:15: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:18: test
+INFO:root:2024-04-24 07:55:18: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:18: 2024-04-24 15:55:18 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:18: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING b2 fd 0f 67 [binary, 4 bytes]
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection
+DEBUG:asyncio:Using proactor: IocpProactor
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /demo HTTP/1.1
+DEBUG:websockets.client:> Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: D5JE5NJrMp3pqXWxvebE6Q==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> User-Agent: Python/3.9 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Tue, 23 Apr 2024 23:55:31 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< upgrade: websocket
+DEBUG:websockets.client:< sec-websocket-accept: ojJwd22dYeo7PTc46oxOfm37QSM=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:27: 2024-04-24 15:55:27 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:27: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:27: test
+INFO:root:2024-04-24 07:55:27: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:30: 2024-04-24 15:55:30 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:30: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:30: test
+INFO:root:2024-04-24 07:55:30: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:33: 2024-04-24 15:55:33 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:33: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:33: test
+INFO:root:2024-04-24 07:55:33: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:36: 2024-04-24 15:55:36 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:36: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:36: test
+INFO:root:2024-04-24 07:55:36: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:39: test
+INFO:root:2024-04-24 07:55:39: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /api/trans/KL00101 HTTP/1.1" 200 162
+INFO:root:2024-04-24 07:55:39: 2024-04-24 15:55:39 2024-04-24 15:30:38
+INFO:root:2024-04-24 07:55:39: Error: could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3). Retrying...
+DEBUG:websockets.client:> TEXT '{"action": "sendMessage", "message": "test"}' [44 bytes]
+DEBUG:websockets.client:< TEXT 'test' [4 bytes]
+INFO:root:2024-04-24 07:55:42: test
+INFO:root:2024-04-24 07:55:42: Connection closed (could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)). Reconnecting...
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:urllib3.connectionpool:http://127.0.0.1:5000 "GET /get_time HTTP/1.1" 200 86
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:5000
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:websockets.client:x closing TCP connection

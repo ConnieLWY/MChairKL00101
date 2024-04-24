@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+.disabledbutton {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.payselected {
+  border: 4px #34E0A1 solid !important;
+}
+.sceneselected {
+  border: 4px #34E0A1 solid !important;
+}
+.modeselected {
+  background: #34E0A1 !important;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+button[disabled] div div {
+  color: rgb(223, 216, 216) !important;
+}
+.modal-close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.half-icon {
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inv-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-size: 14px;
+}

@@ -1,0 +1,228 @@
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: TcSFCx7vayp4uxOM/goYmQ==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 21:43:01 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: 5OXkVpvyYjK822QwXSWB+zmdJmA=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: z+GoRjoyros4sd5G9m0qCw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 21:45:15 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: RuST4/kIXiduNQNR/A59QoohnfA=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: npeYv7lKjuLHmxLwWjNqog==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 21:45:31 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: FVFZuy+kgCgPFJtwqBzSnpwPink=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: DZPmMLAw5O9QhJ7425o3ow==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 21:46:38 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: lmQOIlBJsNTd8n9yhChjtUxlfiM=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:++Rcv raw: b'\x88\x0c\x03\xe9Going away'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=8 data=b'\x03\xe9Going away'
+DEBUG:websocket:++Sent raw: b'\x88\x82\xc1H\xee\xb9\xc2\xa0'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+INFO:__main__:WebSocket closed. Code: 1001, Message: Going away
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: 2Vn8Dbgg5N3AgpeOLIgT6g==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 22:06:05 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: Q198Viqxr9P2YcC3i3SF59SMNBc=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:++Rcv raw: b'\x81\x1159 59 06 02 01 BB'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'59 59 06 02 01 BB'
+INFO:__main__:Received message: 59 59 06 02 01 BB
+DEBUG:websocket:++Rcv raw: b'\x81\x1159 59 06 03 01 BC'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'59 59 06 03 01 BC'
+INFO:__main__:Received message: 59 59 06 03 01 BC
+DEBUG:websocket:++Rcv raw: b'\x81\x1159 59 06 03 03 BE'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'59 59 06 03 03 BE'
+INFO:__main__:Received message: 59 59 06 03 03 BE
+DEBUG:websocket:++Rcv raw: b'\x81\x1159 59 06 02 01 BB'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'59 59 06 02 01 BB'
+INFO:__main__:Received message: 59 59 06 02 01 BB
+DEBUG:websocket:++Rcv raw: b'\x81\x1159 59 06 02 01 BB'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'59 59 06 02 01 BB'
+INFO:__main__:Received message: 59 59 06 02 01 BB
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: E/e7ovhPSSsdz09M1QAvLg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 22:15:43 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: c7cpucoUojAqzyXS0Y13k2jlIto=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+ERROR:__main__:WebSocket error: 
+DEBUG:websocket:++Sent raw: b'\x88\x82qa\\)r\x89'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+INFO:__main__:WebSocket closed. Code: None, Message: None
+INFO:websocket:tearing down on exception 
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: 0GTYf1wyFZ0WFkEe1/5IIg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 22:25:39 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: ZqWypjrsQ/5dkws0ZmZPkkWomcc=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:++Rcv raw: b'\x81\x1159 59 06 03 02 BD'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'59 59 06 03 02 BD'
+INFO:__main__:Received message: 59 59 06 03 02 BD
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: DsdXwR5CxiQBi/1hQDVVcg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 22:27:35 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: +9noSozSmnKs59WJcAY9vZIX6Go=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: gHXz+P8yOfuf00AOdLSEAA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 22:28:17 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: OFqjeFPXzSR3m3Mp115/z4vGwLw=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /demo HTTP/1.1
+Upgrade: websocket
+Host: xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Origin: https://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com
+Sec-WebSocket-Key: l8KsNeYRNlY8IrnrEENqgA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Date: Tue, 23 Apr 2024 22:29:54 GMT
+DEBUG:websocket:Connection: upgrade
+DEBUG:websocket:upgrade: websocket
+DEBUG:websocket:sec-websocket-accept: 1mLQDa0Kpo1BtJQryCFpvz2u8xo=
+DEBUG:websocket:-----------------------
+INFO:websocket:Websocket connected
+INFO:__main__:Opened connection
