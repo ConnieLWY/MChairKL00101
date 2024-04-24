@@ -173,7 +173,7 @@ $(document).ready(function () {
                         document.getElementById('total').innerHTML = 'Total Time: ' + duration + ' min';
 
                         const message1 = "59 59 06 02 01 BB".replace(/ /g, "_");
-                        const message2 = "59 59 06 02 01 BB".replace(/ /g, "_");
+                        const message2 = "59 59 06 04 1E DA".replace(/ /g, "_");
 
                         console.log(message1);
                         sendMessageAndCloseSocket(message1);
