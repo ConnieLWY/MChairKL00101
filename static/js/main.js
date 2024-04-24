@@ -177,8 +177,10 @@ $(document).ready(function () {
 
                         console.log(message1);
                         sendMessageAndCloseSocket(message1);
-                        console.log(message2);
-                        sendMessageAndCloseSocket(message2);
+                        setTimeout(() => {
+                            console.log(message2);
+                            sendMessageAndCloseSocket(message2);
+                        }, 2000); // Wait for 2000 milliseconds (2 seconds)
 
                         startCountdown(StopTime);
 
@@ -198,8 +200,10 @@ $(document).ready(function () {
         const stop2 = "59 59 06 02 02 BC".replace(/ /g, "_");
         console.log(stop1);
         sendMessageAndCloseSocket(stop1);
-        console.log(stop2);
-        sendMessageAndCloseSocket(stop2);
+        setTimeout(() => {
+            console.log(stop2);
+            sendMessageAndCloseSocket(stop2);
+        }, 2000); // Wait for 2000 milliseconds (2 seconds)
         updateTrans();
         setTimeout(fetchTrans, 3000);
     });
