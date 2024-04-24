@@ -180,7 +180,7 @@ $(document).ready(function () {
                                     url: '/api/send_command',
                                     type: 'POST',
                                     contentType: 'application/json',
-                                    data: JSON.stringify(message2),
+                                    data: JSON.stringify(command2),
                                     success: function (response) {
                                         startCountdown(StopTime);
                                     },
