@@ -88,7 +88,7 @@ def save_transaction():
         mc_id = data.get('mc_id')
         duration_minutes = data.get('duration') # Duration in minutes passed from API
         # start_time = datetime.now() + timedelta(seconds=5)  # Start time is the current time
-        start_time = datetime.now() + timedelta(hours=8)
+        start_time = datetime.now() + timedelta(hours=8) + timedelta(seconds=3)
         stop_time = start_time + timedelta(minutes=duration_minutes) # Calculate stop time
         amount = data.get('amount')
         print(mc_id, duration_minutes, start_time, stop_time)

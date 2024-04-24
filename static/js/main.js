@@ -162,17 +162,32 @@ $(document).ready(function () {
                         const StopTime = response.StopTime;
                         document.getElementById('total').innerHTML = 'Total Time: ' + duration + ' min';
 
-                        const message = "59 59 06 02 01 BB".replace(/ /g, "_");
-                        var command = {
-                            command: message
+                        const message1 = "59 59 06 02 01 BB".replace(/ /g, "_");
+                        const message2 = "59 59 06 02 01 BB".replace(/ /g, "_");
+                        var command1 = {
+                            command: message1
+                        };
+                        var command2 = {
+                            command: message2
                         };
                         $.ajax({
                             url: '/api/send_command',
                             type: 'POST',
                             contentType: 'application/json',
-                            data: JSON.stringify(command),
+                            data: JSON.stringify(command1),
                             success: function (response) {
-                                startCountdown(StopTime);
+                                $.ajax({
+                                    url: '/api/send_command',
+                                    type: 'POST',
+                                    contentType: 'application/json',
+                                    data: JSON.stringify(message2),
+                                    success: function (response) {
+                                        startCountdown(StopTime);
+                                    },
+                                    error: function (xhr, status, error) {
+                                        alert(error);
+                                    }
+                                })
                             },
                             error: function (xhr, status, error) {
                                 alert(error);
