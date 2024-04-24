@@ -114,7 +114,7 @@ def get_trans_by_id(ID):
         cursor = conn.cursor()
 
         # Execute SQL query to fetch data for the specified ID
-        cursor.execute("SELECT TOP 1 * FROM [Transaction] WHERE MC_ID = ? ORDER BY StartTime DESC", (ID,))
+        cursor.execute("SELECT TOP 1 * FROM [Transaction] WHERE MC_ID = ? ORDER BY TransactionID DESC", (ID,))
         row = cursor.fetchone()
         print(row)
         # If row is found, format data as a dictionary
