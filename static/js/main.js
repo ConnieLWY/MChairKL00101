@@ -181,6 +181,8 @@ $(document).ready(function () {
                             console.log(message1);
                             sendMessageAndCloseSocket(message1);
                         }, 2000); // Wait for 2000 milliseconds (2 seconds)
+                        console.log(message1);
+                            sendMessageAndCloseSocket(message1);
                         setTimeout(() => {
                             console.log(message2);
                             sendMessageAndCloseSocket(message2);
@@ -208,6 +210,8 @@ $(document).ready(function () {
             console.log(stop2);
             sendMessageAndCloseSocket(stop2);
         }, 2000); // Wait for 2000 milliseconds (2 seconds)
+        console.log(stop2);
+            sendMessageAndCloseSocket(stop2);
         updateTrans();
         setTimeout(fetchTrans, 3000);
     });
