@@ -1,9 +1,6 @@
 from flask import Flask, render_template, jsonify, request
 import pyodbc
 from datetime import datetime, timedelta
-import websocket
-import json
-import time
 
 app = Flask(__name__)
 
@@ -30,53 +27,6 @@ def get_time():
     except Exception as e:
         print(e)
         return jsonify({'error': str(e)}), 500
-
-def send_command_with_retry(command, websocket_url, max_retries=3):
-    retry_count = 0
-    while retry_count < max_retries:
-        try:
-            # Connect to WebSocket
-            ws = websocket.WebSocket()
-            ws.connect(websocket_url)
-
-            for c in command:
-                message = {"action": "sendMessage", "message": c.replace("_", " ")}
-                json_message = json.dumps(message)
-
-                # Send command
-                ws.send(json_message)
-
-            # Receive response if needed
-            response = 'succeed'
-
-            # Close WebSocket connection
-            ws.close()
-
-            return response
-
-        except Exception:
-            # WebSocket connection closed, retry after a delay
-            retry_count += 1
-            print(f"Connection attempt {retry_count} failed. Retrying...")
-            time.sleep(1)  # Add a delay before retrying
-
-    return None  # Return None if max retries reached without success
-
-@app.route('/api/send_command', methods=['POST'])
-def send_command():
-    # Get the command from the request
-    command = request.json.get('command')
-
-    # WebSocket URL
-    websocket_url = "wss://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com/demo"
-
-    # Send command with retry
-    response = send_command_with_retry(command, websocket_url)
-
-    if response is not None:
-        return jsonify({'message': 'Command sent successfully', 'response': response})
-    else:
-        return jsonify({'error': 'Failed to send command after multiple retries'})
 
 
 @app.route('/api/save_transaction', methods=['POST'])

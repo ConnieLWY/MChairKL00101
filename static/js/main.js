@@ -9,25 +9,35 @@ $(document).ready(function () {
 
     controlButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const message = this.getAttribute('data-message').replace(/ /g, "_");
-            var command = {
-                command: message
-            };
-            $.ajax({
-                url: '/api/send_command',
-                type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify(command),
-                success: function (response) {
-                    console.log(command)
-                },
-                error: function (xhr, status, error) {
-                    alert(error);
-                }
-            });
-        });
+            const message = this.getAttribute('data-message');
+            console.log(message);
+            sendMessageAndCloseSocket(message);
+          });
     });
-
+    
+    function sendMessageAndCloseSocket(message) {
+        const webSocket = new WebSocket('wss://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com/demo');
+        
+        // Handle WebSocket events
+        webSocket.onopen = function () {
+          console.log('WebSocket connected.');
+          // Send the message once the socket is open
+          var payload = JSON.stringify({ "action": "sendMessage", "message": message });
+          console.log(payload);
+          webSocket.send(payload);
+          // Close the socket after sending the message
+          webSocket.close();
+        };
+      
+        webSocket.onclose = function () {
+          console.log('WebSocket connection closed.');
+        };
+      
+        webSocket.onerror = function (error) {
+          console.error('WebSocket error:', error);
+        };
+      }
+    
     var paybuttons = document.querySelectorAll('.containerPayment button');
     paybuttons.forEach(function (button) {
         button.addEventListener('click', function () {
@@ -164,22 +174,12 @@ $(document).ready(function () {
 
                         const message1 = "59 59 06 02 01 BB".replace(/ /g, "_");
                         const message2 = "59 59 06 02 01 BB".replace(/ /g, "_");
-                        var command1 = {
-                            command: [message1, message2]
-                        };
 
-                        $.ajax({
-                            url: '/api/send_command',
-                            type: 'POST',
-                            contentType: 'application/json',
-                            data: JSON.stringify(command1),
-                            success: function (response) {
-                                startCountdown(StopTime);
-                            },
-                            error: function (xhr, status, error) {
-                                alert(error);
-                            }
-                        });
+                        console.log(message1);
+                        sendMessageAndCloseSocket(message1);
+                        console.log(message2);
+                        sendMessageAndCloseSocket(message2);
+
                     },
                     error: function (xhr, status, error) {
                         console.error('Error:', error); // Log error message
@@ -194,22 +194,10 @@ $(document).ready(function () {
     $("#stopSession").click(function () {
         const stop1 = "59 59 06 03 01 BC".replace(/ /g, "_");
         const stop2 = "59 59 06 02 02 BC".replace(/ /g, "_");
-        var command1 = {
-            command: [stop1, stop2]
-        };
-        $.ajax({
-            url: '/api/send_command',
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(command1),
-            success: function (response) {
-                updateTrans();
-                setTimeout(fetchTrans, 3000);
-            },
-            error: function (xhr, status, error) {
-                alert('command1: ' + error);
-            }
-        });
+        console.log(stop1);
+        sendMessageAndCloseSocket(stop1);
+        console.log(stop2);
+        sendMessageAndCloseSocket(stop2);
     });
 
     $("#endSession").click(function () {
