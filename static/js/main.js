@@ -207,9 +207,14 @@ $(document).ready(function () {
         console.log(stop1);
         sendMessageAndCloseSocket(stop1);
         setTimeout(() => {
+            console.log(stop1);
+            sendMessageAndCloseSocket(stop1);
+        }, 3000);
+        console.log(stop2);
+        setTimeout(() => {
             console.log(stop2);
             sendMessageAndCloseSocket(stop2);
-        }, 2000); // Wait for 2000 milliseconds (2 seconds)
+        }, 3000);
         console.log(stop2);
             sendMessageAndCloseSocket(stop2);
         updateTrans();
@@ -365,6 +370,20 @@ $(document).ready(function () {
                             document.getElementById('count').innerHTML = "00:00";
                             $("div.Paycontainer").show();
                             $("div.controlContainer").addClass("disabledbutton");
+                            $("#invModal").modal("show");
+                            fetch('/api/inv/KL00101')
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById('invDate').innerHTML = data.StopTime;
+                                document.getElementById('invMCID').innerHTML = 'Massage Chair ' + data.MC_ID;
+                                document.getElementById('invNo').innerHTML = data.CustomTransactionID;
+                                document.getElementById('invLoc').innerHTML = data.Name;
+                                document.getElementById('invPay').innerHTML = 'RM ' + data.Amount;
+                                document.getElementById('invTotal').innerHTML = 'RM ' + data.Amount;
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                            });
                         }
                     },
                     error: function (xhr, status, error) {
@@ -383,10 +402,47 @@ $(document).ready(function () {
             return;
         }
     }
-    window.onload = function () {
+
+    $("#invPDF").on('click', function () {
+        var element = $("#print"); // Get the element you want to capture
+    
+        // Hide the buttons
+        element.find("#invPDF, #endSession").hide();
+    
+        // Check if the element exists and is visible
+        if (element.length > 0 && element.is(":visible")) {
+            html2canvas(element[0]).then(function(canvas) {
+                // Convert the canvas to data URL
+                var imgageData = canvas.toDataURL("image/png");
+    
+                // Create a temporary anchor element to trigger the download
+                var tempLink = document.createElement('a');
+                tempLink.href = imgageData;
+                tempLink.download = "receipt.png";
+    
+                // Trigger the download
+                document.body.appendChild(tempLink);
+                tempLink.click();
+                document.body.removeChild(tempLink);
+    
+                // Show the buttons again
+                element.find("#invPDF, #endSession").show();
+            });
+        } else {
+            console.error("Element is not present or visible");
+        }
+    });
+
+    document.getElementById('main').style.display = "none";
+
+    window.onload = function() {
         $(window).scrollTop(0);
     };
 
-    fetchData();
-    fetchTrans();
+    setTimeout(function() {
+        document.getElementById('splash').style.display = "none";
+        document.getElementById('main').style.display = "block";
+        fetchData();
+        fetchTrans();
+    }, 2500);
 });
