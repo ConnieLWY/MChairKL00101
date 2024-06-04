@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
     
     function sendMessageAndCloseSocket(message) {
-        const webSocket = new WebSocket('wss://xcl7vxzurl.execute-api.ap-southeast-2.amazonaws.com/demo');
+        const webSocket = new WebSocket('wss://mcsocket-2d82dc26cec3.herokuapp.com');
         
         // Handle WebSocket events
         webSocket.onopen = function () {
@@ -24,7 +24,7 @@ $(document).ready(function () {
           // Send the message once the socket is open
           var payload = JSON.stringify({ "action": "sendMessage", "message": message });
           console.log(payload);
-          webSocket.send(payload);
+          webSocket.send(message);
           // Close the socket after sending the message
           webSocket.close();
         };
